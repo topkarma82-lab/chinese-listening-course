@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>中文精听</title>
+<style>
+:root{--bg:#f7f5ef;--paper:#fffefb;--ink:#202733;--muted:#72787a;--green:#294037;--line:#e6e0d5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.shell{max-width:1180px;margin:auto;padding:46px 24px 70px}
+header{margin-bottom:30px;padding-left:210px}
+.kicker{font-size:14px;font-weight:700;color:#49685a;letter-spacing:.08em}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.12;margin:7px 0 11px;letter-spacing:-.03em}
+.lead{max-width:680px;color:#62696b;font-size:17px;line-height:1.7;margin:0}
+.counts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.counts span{font-size:13px;color:#666e70;background:#ece9e1;border-radius:999px;padding:5px 10px}
+.layout{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:start}
+.sidebar{position:sticky;top:22px}
+.side-title{font-size:13px;color:#8b8f8c;margin:0 0 10px 4px}
+.side-filter{width:100%;border:0;background:transparent;text-align:left;padding:12px 14px;border-radius:11px;font:inherit;font-size:16px;color:#4d5557;cursor:pointer;margin-bottom:5px}
+.side-filter:hover{background:#efede7}
+.side-filter.active{background:var(--green);color:white;font-weight:650}
+.content-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}
+.content-head h2{margin:0;font-size:23px}
+.result-count{font-size:13px;color:#8b8f8d}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.course-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;min-height:188px;display:flex;flex-direction:column}
+.card-top{display:flex;justify-content:space-between;align-items:center}
+.lesson-no{font-weight:800;color:#919591;font-size:13px}
+.duration{font-size:13px;color:#7a8080}
+h3{font-size:19px;line-height:1.45;margin:14px 0 12px;font-weight:650}
+.meta{display:flex;justify-content:space-between;gap:10px;color:#7b817f;font-size:13px;margin-top:auto}
+.status{color:#9a8662}
+.done .status{color:#49685a;font-weight:700}
+.enter{margin-top:14px;text-decoration:none;color:#fff;background:#49685a;border-radius:10px;padding:9px 12px;text-align:center;font-size:14px}
+.enter.disabled{background:#ebe8e0;color:#a0a19d;pointer-events:none}
+.note{margin-top:25px;color:#929692;font-size:13px;line-height:1.7}
+@media(max-width:760px){
+ .shell{padding:30px 14px 55px}
+ header{padding-left:0}
+ .layout{grid-template-columns:1fr;gap:18px}
+ .sidebar{position:static;display:flex;gap:8px;overflow-x:auto;padding-bottom:3px}
+ .side-title{display:none}
+ .side-filter{width:auto;white-space:nowrap;margin:0;border:1px solid var(--line);background:var(--paper);padding:9px 13px;border-radius:999px}
+ .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<main class="shell">
+<header>
+  <div class="kicker">中文精听</div>
+  <h1>听真实中文，学自然表达。</h1>
+  <p class="lead">选择一个主题，进入具体课程。</p>
+  <div class="counts"><span>沟通与关系 7课</span><span>工作与成长 4课</span><span>人物与人生 11课</span></div>
+</header>
+
+<section class="layout">
+  <aside class="sidebar">
+    <div class="side-title">课程分类</div>
+    <button class="side-filter active" data-filter="全部">全部</button><button class="side-filter" data-filter="沟通与关系">沟通与关系</button><button class="side-filter" data-filter="工作与成长">工作与成长</button><button class="side-filter" data-filter="人物与人生">人物与人生</button>
+  </aside>
+
+  <div>
+    <div class="content-head">
+      <h2 id="sectionTitle">全部课程</h2>
+      <span class="result-count" id="resultCount">22课</span>
+    </div>
+    <section class="grid">
+        <article class="course-card" data-cat="沟通与关系">
+          <div class="card-top">
+            <span class="lesson-no">01</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>“发问”是接近对方最好的方式</h3>
+          <div class="meta"><span>沟通与关系</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="沟通与关系">
+          <div class="card-top">
+            <span class="lesson-no">02</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>崔永元：谈话中的万能钥匙你知道吗？</h3>
+          <div class="meta"><span>沟通与关系</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card done" data-cat="沟通与关系">
+          <div class="card-top">
+            <span class="lesson-no">03</span>
+            <span class="duration">约8分钟</span>
+          </div>
+          <h3>会换位思考才是情商高的表现</h3>
+          <div class="meta"><span>沟通与关系</span><span class="status">已制作</span></div>
+          <a class="enter" href="lesson04_formal_v1.html">进入学习</a>
+        </article>
+        <article class="course-card" data-cat="沟通与关系">
+          <div class="card-top">
+            <span class="lesson-no">04</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>情商最低的行为，就是不停地讲道理</h3>
+          <div class="meta"><span>沟通与关系</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="沟通与关系">
+          <div class="card-top">
+            <span class="lesson-no">05</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>细节总在出卖你</h3>
+          <div class="meta"><span>沟通与关系</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="沟通与关系">
+          <div class="card-top">
+            <span class="lesson-no">06</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>三个方法，让你拥有好人缘</h3>
+          <div class="meta"><span>沟通与关系</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="沟通与关系">
+          <div class="card-top">
+            <span class="lesson-no">07</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>狭隘，才是阻止你幸福的最大敌人</h3>
+          <div class="meta"><span>沟通与关系</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="工作与成长">
+          <div class="card-top">
+            <span class="lesson-no">08</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>手头工作，不是做完就好了</h3>
+          <div class="meta"><span>工作与成长</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="工作与成长">
+          <div class="card-top">
+            <span class="lesson-no">09</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>关于职业的偏见</h3>
+          <div class="meta"><span>工作与成长</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="工作与成长">
+          <div class="card-top">
+            <span class="lesson-no">10</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>曹德旺：30年只做一块玻璃</h3>
+          <div class="meta"><span>工作与成长</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card done" data-cat="工作与成长">
+          <div class="card-top">
+            <span class="lesson-no">11</span>
+            <span class="duration">约9分钟</span>
+          </div>
+          <h3>如何确定人生目标</h3>
+          <div class="meta"><span>工作与成长</span><span class="status">已制作</span></div>
+          <a class="enter" href="如何确定人生目标_V2标准版.html">进入学习</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">12</span>
+            <span class="duration">约7–10分钟</span>
+          </div>
+          <h3>有爱的图书馆，建在山林间</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">13</span>
+            <span class="duration">约8–12分钟</span>
+          </div>
+          <h3>哲人史铁生在地坛公园，他度过人生的至暗时刻</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">14</span>
+            <span class="duration">约8–12分钟</span>
+          </div>
+          <h3>我的父亲</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">15</span>
+            <span class="duration">约8–13分钟</span>
+          </div>
+          <h3>马未都《背影》江湖客秦公</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">16</span>
+            <span class="duration">约8–13分钟</span>
+          </div>
+          <h3>马未都《背影》学者王世襄</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">17</span>
+            <span class="duration">约8–13分钟</span>
+          </div>
+          <h3>马未都《背影》学者王世襄（外一篇）</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">18</span>
+            <span class="duration">约8–13分钟</span>
+          </div>
+          <h3>马未都《背影》哲人史铁生</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">19</span>
+            <span class="duration">约8–13分钟</span>
+          </div>
+          <h3>马未都《背影》侠客刘新园</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">20</span>
+            <span class="duration">约17分钟</span>
+          </div>
+          <h3>马未都《背影》老人叶圣陶</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">21</span>
+            <span class="duration">约8–13分钟</span>
+          </div>
+          <h3>马未都《背影》风骨俞伟超</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article>
+        <article class="course-card" data-cat="人物与人生">
+          <div class="card-top">
+            <span class="lesson-no">22</span>
+            <span class="duration">约8–13分钟</span>
+          </div>
+          <h3>马未都《背影》名门李家治</h3>
+          <div class="meta"><span>人物与人生</span><span class="status">待制作</span></div>
+          <a class="enter disabled" href="#">制作中</a>
+        </article></section>
+    
+  </div>
+</section>
+</main>
+<script>
+const filters=[...document.querySelectorAll('.side-filter')];
+const cards=[...document.querySelectorAll('.course-card')];
+const title=document.getElementById('sectionTitle');
+const count=document.getElementById('resultCount');
+filters.forEach(btn=>btn.addEventListener('click',()=>{
+  filters.forEach(x=>x.classList.remove('active'));
+  btn.classList.add('active');
+  const f=btn.dataset.filter;
+  let visible=0;
+  cards.forEach(c=>{
+    const show=f==='全部'||c.dataset.cat===f;
+    c.style.display=show?'flex':'none';
+    if(show) visible++;
+  });
+  title.textContent=f==='全部'?'全部课程':f;
+  count.textContent=visible+'课';
+}));
+</script>
+</body>
+</html>
