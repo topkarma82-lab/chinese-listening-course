@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>我的父亲｜中文精听</title>
+<style>
+:root{--bg:#f7f5ef;--paper:#fffefb;--ink:#202733;--muted:#737980;--green:#49685a;--line:#e8e2d6;--mark:#fff0a6;--chip:#f4f1e8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.85}
+.wrap{max-width:900px;margin:0 auto;padding:44px 22px 72px}
+.back{display:inline-block;color:#66706b;text-decoration:none;font-size:14px;margin-bottom:20px}
+.kicker{font-size:14px;font-weight:700;color:var(--green);letter-spacing:.05em}
+h1{margin:6px 0 4px;font-size:clamp(30px,5vw,44px);line-height:1.25;letter-spacing:-.025em}
+.sub{font-size:14px;color:var(--muted)}
+.player,.focus-box,.paper{background:var(--paper);border:1px solid var(--line);border-radius:18px}
+.player{margin:24px 0 18px;padding:16px 18px}
+audio{display:block;width:100%}
+.focus-box{padding:22px 24px;margin-bottom:18px}
+.focus-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:14px}
+.focus-head h2,.paper h2{margin:0;font-size:21px}
+.small-hint{font-size:13px;color:var(--muted)}
+.term-list{display:flex;flex-wrap:wrap;gap:9px}
+.term-chip{appearance:none;border:1px solid #e5dfd2;background:var(--chip);color:#39414a;border-radius:999px;padding:8px 12px;cursor:pointer;font:inherit;font-size:15px;display:inline-flex;gap:5px;align-items:baseline}
+.term-chip.active{background:#273b33;color:white;border-color:#273b33}
+.chip-pinyin{font-size:11px;opacity:.75}
+.word-detail{margin-top:16px;padding:18px 19px;background:#faf9f5;border:1px solid #ece7dc;border-radius:14px}
+.word-title-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.word-title{font-size:22px;font-weight:750}
+.word-pinyin{font-size:14px;color:#8a6b28}
+.meaning{margin:4px 0 12px;color:#505760}
+.detail-label{font-size:12px;font-weight:700;color:var(--muted);margin:10px 0 7px;letter-spacing:.04em}
+.collocations{display:flex;flex-wrap:wrap;gap:7px}
+.collocation{background:white;border:1px solid #e6e1d7;border-radius:8px;padding:5px 9px;font-size:15px}
+.example{margin:0;color:#343b43}
+.paper{padding:28px 30px}
+.paper-head{display:flex;align-items:end;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:17px}
+.transcript p{font-size:18px;margin:0 0 17px;letter-spacing:.005em}
+.marked-term{font:inherit;color:inherit;border:0;border-bottom:2px solid #dfbd38;background:linear-gradient(transparent 55%,var(--mark) 55%);padding:0 2px;cursor:pointer;border-radius:3px}
+.footer{text-align:center;color:#a19a8f;font-size:12px;margin-top:26px}
+@media(max-width:600px){
+ .wrap{padding:28px 13px 55px}
+ .focus-box,.paper{padding:19px 16px;border-radius:14px}
+ .term-chip{font-size:14px;padding:7px 10px}
+ .transcript p{font-size:17px}
+ .focus-head,.paper-head{align-items:flex-start;flex-direction:column}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="index.html">← 返回课程首页</a>
+  <header>
+    <div class="kicker">中文精听 · 人物与人生</div>
+    <h1>我的父亲</h1>
+    <div class="sub">听音频 · 看文字稿 · 学重点词语</div>
+  </header>
+  <section class="player">
+    <audio controls preload="metadata" src="radio/3-001我的父亲（清澈人声特效版）是否有另一个世界，让我们与逝去的亲人沟通.mp3"></audio>
+  </section>
+  <section class="focus-box">
+    <div class="focus-head"><h2>重点词语</h2><div class="small-hint">点击词语，查看搭配与例句</div></div>
+    <div class="term-list"><button class="term-chip active" data-term="0" type="button"><span>言外之意</span></button><button class="term-chip" data-term="1" type="button"><span>行伍出身</span><span class="chip-pinyin">háng wǔ chū shēn</span></button><button class="term-chip" data-term="2" type="button"><span>罕见</span><span class="chip-pinyin">hǎn jiàn</span></button><button class="term-chip" data-term="3" type="button"><span>大张旗鼓</span></button><button class="term-chip" data-term="4" type="button"><span>素昧平生</span><span class="chip-pinyin">sù mèi píng shēng</span></button><button class="term-chip" data-term="5" type="button"><span>九死一生</span></button><button class="term-chip" data-term="6" type="button"><span>家常便饭</span></button><button class="term-chip" data-term="7" type="button"><span>幸灾乐祸</span></button><button class="term-chip" data-term="8" type="button"><span>深藏不露</span></button><button class="term-chip" data-term="9" type="button"><span>支离破碎</span></button><button class="term-chip" data-term="10" type="button"><span>意志崩溃</span></button><button class="term-chip" data-term="11" type="button"><span>说不清道不明</span></button><button class="term-chip" data-term="12" type="button"><span>罹患</span><span class="chip-pinyin">lí huàn</span></button><button class="term-chip" data-term="13" type="button"><span>枪林弹雨</span></button><button class="term-chip" data-term="14" type="button"><span>哑弹</span><span class="chip-pinyin">yǎ dàn</span></button><button class="term-chip" data-term="15" type="button"><span>与世长辞</span></button><button class="term-chip" data-term="16" type="button"><span>树欲静而风不止，子欲养而亲不待</span></button><button class="term-chip" data-term="17" type="button"><span>怅然</span><span class="chip-pinyin">chàng rán</span></button><button class="term-chip" data-term="18" type="button"><span>达观</span></button><button class="term-chip" data-term="19" type="button"><span>哑然失笑</span><span class="chip-pinyin">yǎ rán shī xiào</span></button></div>
+    <div class="word-detail" id="wordDetail"></div>
+  </section>
+  <section class="paper">
+    <div class="paper-head"><h2>字幕 / 文字稿</h2><div class="small-hint">同一重点词只标第一次出现</div></div>
+    <div class="transcript"><p>The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.</p></div>
+  </section>
+  <div class="footer">中文精听学习页</div>
+</main>
+<script>
+const DATA=[{"key":"言外之意","meaning":"话语表面没有直接说出来，但实际包含的意思。","collocations":["听出言外之意","话中有话","理解言外之意"],"example":"他说得很委婉，但我还是听出了言外之意。"},{"key":"行伍出身","pinyin":"háng wǔ chū shēn","meaning":"早年从军，来自军队系统。","collocations":["军人出身","行伍出身的人","从军经历"],"example":"他行伍出身，做事一直很有纪律。"},{"key":"罕见","pinyin":"hǎn jiàn","meaning":"很少见，不常出现。","collocations":["十分罕见","比较罕见","罕见现象","极为罕见"],"example":"这种自然现象在世界上也比较罕见。"},{"key":"大张旗鼓","meaning":"声势很大地进行某项活动。","collocations":["大张旗鼓地宣传","大张旗鼓地开展","声势浩大"],"example":"这件事当年曾被大张旗鼓地宣传。"},{"key":"素昧平生","pinyin":"sù mèi píng shēng","meaning":"彼此从来不认识。","collocations":["与人素昧平生","两个素昧平生的人","互不相识"],"example":"两个素昧平生的人，有时也会因为一件小事互相帮助。"},{"key":"九死一生","meaning":"经历极大危险，几乎丧命但最终活了下来。","collocations":["经历九死一生","九死一生地活下来","死里逃生"],"example":"他经历过九死一生的战争年代。"},{"key":"家常便饭","meaning":"原指日常饭食，也比喻经常发生、很普通的事情。","collocations":["已经是家常便饭","把……当家常便饭","司空见惯"],"example":"在那个年代，孩子挨批评几乎是家常便饭。"},{"key":"幸灾乐祸","meaning":"看到别人遭遇不幸反而感到高兴。","collocations":["有点幸灾乐祸","不要幸灾乐祸","幸灾乐祸的心理"],"example":"看到别人犯错时，不应该幸灾乐祸。"},{"key":"深藏不露","meaning":"把自己的感情、能力或想法隐藏得很深，不轻易表现出来。","collocations":["感情深藏不露","一个深藏不露的人","不轻易流露"],"example":"父亲对孩子的爱很深，却一直深藏不露。"},{"key":"支离破碎","meaning":"零散、不完整，缺少连贯性。","collocations":["记忆支离破碎","信息支离破碎","变得支离破碎"],"example":"多年以后，他对那段生活的记忆已经有些支离破碎。"},{"key":"意志崩溃","meaning":"承受不住压力，精神上的坚持完全垮掉。","collocations":["接近崩溃","意志坚定","心理崩溃"],"example":"长期的严寒和困难容易让人的意志接近崩溃。"},{"key":"说不清道不明","meaning":"很难用语言解释得清楚。","collocations":["一种说不清道不明的感觉","很难说清","难以言明"],"example":"有些复杂的感情确实说不清道不明。"},{"key":"罹患","pinyin":"lí huàn","meaning":"患上疾病，多用于较正式或书面的表达。","collocations":["罹患癌症","罹患重病","不幸罹患"],"example":"他晚年不幸罹患重病。"},{"key":"枪林弹雨","meaning":"枪弹密集，形容激烈的战争环境。","collocations":["经历枪林弹雨","穿越枪林弹雨","战火纷飞"],"example":"上一代人中，有人真正经历过枪林弹雨。"},{"key":"哑弹","pinyin":"yǎ dàn","meaning":"落下后没有爆炸的炮弹或炸弹。","collocations":["一发哑弹","发现哑弹","未爆炸弹"],"example":"战场上的一发哑弹，有时会决定一个人的命运。"},{"key":"与世长辞","meaning":"委婉地表示一个人去世。","collocations":["不幸与世长辞","因病与世长辞","离开人世"],"example":"老人最终在家人的陪伴下与世长辞。"},{"key":"树欲静而风不止，子欲养而亲不待","meaning":"想尽孝时父母却已经不在，表达失去亲人后的遗憾。","collocations":["珍惜陪伴父母的时间","及时尽孝","不要留下遗憾"],"example":"很多人经历失去亲人后，才真正理解“子欲养而亲不待”的遗憾。"},{"key":"怅然","pinyin":"chàng rán","meaning":"因失意、怀念或惆怅而感到不舒服。","collocations":["怅然若失","感到怅然","神情怅然"],"example":"每次想起父亲，他心里仍会有些怅然。"},{"key":"达观","meaning":"对人生的得失看得比较开，态度豁达。","collocations":["性格达观","为人达观","保持达观"],"example":"父亲经历很多困难，却一直非常达观。"},{"key":"哑然失笑","pinyin":"yǎ rán shī xiào","meaning":"忍不住笑了出来。","collocations":["令人哑然失笑","不禁哑然失笑","想起后哑然失笑"],"example":"多年后想起父亲的一些小毛病，他反而会哑然失笑。"}];
+const detail=document.getElementById('wordDetail');
+const chips=[...document.querySelectorAll('.term-chip')];
+const marks=[...document.querySelectorAll('.marked-term')];
+function renderTerm(i){
+ const t=DATA[i];
+ chips.forEach((x,idx)=>x.classList.toggle('active',idx===i));
+ const p=t.pinyin?`<span class="word-pinyin">${t.pinyin}</span>`:'';
+ detail.innerHTML=`<div class="word-title-row"><div class="word-title">${t.key}</div>${p}</div>
+ <p class="meaning">${t.meaning}</p>
+ <div class="detail-label">常用搭配</div>
+ <div class="collocations">${t.collocations.map(x=>`<span class="collocation">${x}</span>`).join('')}</div>
+ <div class="detail-label">例句</div><p class="example">${t.example}</p>`;
+}
+chips.forEach((b,i)=>b.addEventListener('click',()=>renderTerm(i)));
+marks.forEach(b=>b.addEventListener('click',()=>{renderTerm(Number(b.dataset.term));document.querySelector('.focus-box').scrollIntoView({behavior:'smooth',block:'start'});}));
+renderTerm(0);
+</script>
+</body>
+</html>
